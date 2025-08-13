@@ -98,8 +98,11 @@ root/
 ## Constraints
 
 Clock: System clock frequency defined in board_config.vh.
+
 VGA: 640×480@60 Hz timing from defs.vh.
+
 Buttons: Active-high push buttons, debounced in logic.
+
 Pin Mapping: See constr/board_pins.csv and digital_snake.xdc.
 
 ## How to Test
@@ -107,17 +110,23 @@ Pin Mapping: See constr/board_pins.csv and digital_snake.xdc.
 ### Simulation
 
 Run tb_vga_timing.v to verify VGA sync/DE timing.
+
 Run tb_snake_core_step.v to verify basic core tick/direction changes.
 
 ### On Hardware
 
 Load bitstream to FPGA board.
+
 Connect VGA monitor.
+
 Press directional buttons to move the snake border demo.
 
 ## Lessons Learned
 
 Single clock + enable pulses simplify timing closure and simulation.
+
 Grid coordinate system makes rendering and collision detection straightforward.
+
 Minimal build works without external memory; VRAM/framebuffer can be added later.
+
 Modular structure allows easy feature upgrades (e.g., PS/2, score display).
