@@ -1,0 +1,17 @@
+#=====================================================================
+# File   : board_pins.csv
+# Brief  : Pin assignment worksheet for Digital Snake
+# Note   : Fill with actual board pin names before synthesis/implementation.
+#=====================================================================
+signal,pin,voltage,notes
+clk,<PIN_CLK>,3.3V,system clock (e.g., 50 MHz)
+rst_n,<PIN_RST_N>,3.3V,active-low reset input
+btn[0],<PIN_BTN0>,3.3V,left (example)
+btn[1],<PIN_BTN1>,3.3V,right (example)
+btn[2],<PIN_BTN2>,3.3V,up (example)
+btn[3],<PIN_BTN3>,3.3V,down (example)
+vga_hs,<PIN_HS>,3.3V,VGA HSync
+vga_vs,<PIN_VS>,3.3V,VGA VSync
+vga_rgb[2],<PIN_RGB_R>,3.3V,red (MSB)
+vga_rgb[1],<PIN_RGB_G>,3.3V,green
+vga_rgb[0],<PIN_RGB_B>,3.3V,blue (LSB)
